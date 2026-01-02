@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        h1 
+        {
+             text-align: center; 
+            }
+        table {
+             width: 100%;
+              border-collapse: collapse;
+             }
+        th, td {
+             border: 1px solid black; 
+             padding: 8px; 
+            }
+        th { 
+            background-color: lightblue; 
+            text-align: left; 
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Registration Application Form For Course – O Level</h1>
+
+<form action="" method="post" >
+<table>
+
+<tr>
+    <th colspan="3">1. Registration Form</th>
+</tr>
+
+<tr>
+    <td>1.0</td>
+    <td>Have you got online reference number for enrolment?</td>
+    <td>
+        Yes <input type="radio" name="reference" value="yes" >
+        No <input type="radio" name="reference" value="no">
+    </td>
+</tr>
+
+<tr>
+    <td>1.1</td>
+    <td>Registration sought for</td>
+    <td>
+        <select name="level" >
+            <option>Level 0</option>
+            <option>Level 1</option>
+            <option>Level 2</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>1.2</td>
+    <td>Applied As</td>
+    <td>
+        <input type="radio" name="applied" value="direct" required> Direct Candidate
+        <input type="radio" name="applied" value="institute"> Through Institute
+    </td>
+</tr>
+
+<tr>
+    <td>1.3</td>
+    <td>Exam Cycle</td>
+    <td>
+        <input type="text" name="exam_cycle" >
+    </td>
+</tr>
+
+<tr>
+    <td>1.4</td>
+    <td>Registration Fee will be paid by</td>
+    <td>
+        <input type="text" name="fee_paid_by" >
+    </td>
+</tr>
+
+<tr>
+    <th colspan="3">2. Application Personal Details</th>
+</tr>
+
+<tr>
+    <td>2.1</td>
+    <td>Applicant's Full Name</td>
+    <td>
+        <select name="title" required>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Others</option>
+        </select>
+        <input type="text" name="full_name" >
+    </td>
+</tr>
+
+<tr>
+    <td>2.2</td>
+    <td>Care Of</td>
+    <td>
+        <input type="radio" name="care" value="parents" > Parents
+        <input type="radio" name="care" value="guardian"> Guardian
+    </td>
+</tr>
+
+<tr>
+    <td>2.3</td>
+    <td>Father's Name</td>
+    <td>
+        <input type="text" name="father_name" >
+    </td>
+</tr>
+
+<tr>
+    <td>2.4</td>
+    <td>Mother's Name</td>
+    <td>
+        <input type="text" name="mother_name" >
+    </td>
+</tr>
+
+<tr>
+    <td>2.5</td>
+    <td>Gender</td>
+    <td>
+        <input type="radio" name="gender" value="male" > Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="others"> Others
+    </td>
+</tr>
+
+<tr>
+    <td>2.6</td>
+    <td>Date of Birth</td>
+    <td>
+        <input type="date" name="dob" >
+    </td>
+</tr>
+
+<tr>
+    <td>2.7</td>
+    <td>Marital Status</td>
+    <td>
+        <select name="marital_status" >
+            <option>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+            <option>Widowed</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>2.8</td>
+    <td>Category</td>
+    <td>
+        <select name="category" >
+            <option>General</option>
+            <option>SC</option>
+            <option>ST</option>
+            <option>OBC</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>2.9</td>
+    <td>Handicapped</td>
+    <td>
+        <input type="radio" name="handicapped" value="yes" > Yes
+        <input type="radio" name="handicapped" value="no"> No
+    </td>
+</tr>
+
+<tr>
+    <td>2.10</td>
+    <td>Religion</td>
+    <td>
+        <select name="religion" required>
+            <option>Hindu</option>
+            <option>Muslim</option>
+            <option>Christian</option>
+            <option>Jain</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <th colspan="3">3. Contact Details</th>
+</tr>
+
+<tr>
+    <td>3.1</td>
+    <td>Mobile Number</td>
+    <td>
+        <input type="text" name="mobile" >
+    </td>
+</tr>
+
+<tr>
+    <td>3.2</td>
+    <td>Email ID</td>
+    <td>
+        <input type="text" name="email" >
+    </td>
+</tr>
+
+<tr>
+    <td>3.3</td>
+    <td>Address Line 1</td>
+    <td>
+        <input type="text" name="address1" >
+    </td>
+</tr>
+
+<tr>
+    <td>3.4</td>
+    <td>Adress Line 2</td>
+    <td>
+        <input type="text" name="address2">
+    </td>
+</tr>
+
+<tr>
+    <td>3.5</td>
+    <td>City</td>
+    <td>
+        <input type="text" name="city" >
+    </td>
+</tr>
+
+<tr>
+    <td>3.6</td>
+    <td>State</td>
+    <td>
+        <select name="state" >
+            <option value="">--Select State--</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="madhya_pradesh">Madhya Pradesh</option>
+            <option value="delhi">Delhi</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>3.7</td>
+    <td>Pin Code</td>
+    <td>
+        <input type="text" name="pincode" >
+    </td>
+</tr>
+
+<tr>
+    <th colspan="3">4. Educational / Qualifications Details</th>
+</tr>
+
+<tr>
+    <td>4.1</td>
+    <td>Highesh Education Qualifications Details</td>
+    <td>
+        <select name="qualification" >
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="graducation">Graduate</option>
+            <option value="post_graducation">Post Graduate</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>4.2</td>
+    <td>Year of passing</td>
+    <td>
+        <input type="text" name="passing_year" >
+    </td>
+</tr>
+
+<tr>
+    <th colspan="3">5. Identification Details</th>
+</tr>
+
+<tr>
+    <td>5.1</td>
+    <td>Adhar Card Number</td>
+    <td>
+        <input type="text" name="aadhar" >
+    </td>
+</tr>
+
+<tr>
+    <td>5.2</td>
+    <td>Upload photo</td>
+    <td>
+        <input type="file" name="photo" accept="image/*" >
+    </td>
+</tr>
+
+<tr>
+    <td colspan="3" style="text-align: center;">
+        <button type="submit">Submit</button>
+        <button type="reset">Back</button>
+    </td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
